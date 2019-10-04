@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+<body>
+    <h1 id="GET"></h1>
+        <button  onclick="load()">Click load </button>
+<script>
+   funcatin loaddulieu () {
+       var http = new XMLHttpRequest();
+       http.onreadystatechange = fucation () {
+           if (http.readystate == 1) {
+               console.log('Bắt Đầu Gởi Đi Yêu Cầu');
+             }
+            if (http.readystate == 2) {
+                console.log('Máy Chủ Đã Nhận');
+            } 
+            if (http.readystate == 3) {
+                console.log('Máy Chủ Đang Xử Lí');
+            }
+            if (http.readystate == 4 && http.status == 200) {
+                document.getElementById('demo') . innerHTML = this.responseText;
+            }
+       }
+  
+   http.open("GET", "loi.txt", true);
+   http.send();
+
+      };
+    </script>
+    </body>
+
+
+
+</html>

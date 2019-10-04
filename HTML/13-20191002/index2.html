@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <tbale>
+            <thead>
+                <th>is</th>
+                <th>name</th>
+                <th>email</th>
+                <th>passwword</th>
+
+                </thead>
+                <tbody id="tbale-body"></tbody>
+
+                   
+            </tbale>
+            <button onclick="indulieu();">click de in du lieu ra bang </button>
+        <script>
+            function indulieu() {
+                var dulieubang  = [
+                [1,'a','b','c'],
+                [2,'d','e','f'],
+                [3,'g','h','j'],
+                ];
+                for (var i=0; i < 3;  i++){
+                    var tablerow = document.createElement('tr');
+                    tableRow.setAttribute('id', 'tr-' + i);
+                    var tableBody =documen.getElementById('table-Body');
+                    tableBody.appendChild(tableRow) ;
+                    
+                    for (var j=0; j < 4; j++) {
+                        var data = document.createElement('td');
+                        data.innerHTML = duLieuBang[i] [j];
+                        tableRow.appendChild(data);
+                    }
+                }
+            }
+            </script>
+        </body> 
+</html>

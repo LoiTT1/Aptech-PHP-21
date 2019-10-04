@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    th,
+    td {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+      <th>password</th>
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+  </table>
+
+  <button onclick="inDuLieu();">Click de in du lieu ra bang</button>
+  <script>
+    function inDuLieu() {
+     
+      var duLieuBang = [
+        [1, 'a', 'b', 'c'],
+        [2, 'd', 'e', 'f'],
+        [3, 'g', 'h', 'j']
+      ];
+      for (var i = 0; i < 3; i++) {
+        var tableRow = document.createElement('tr');
+        tableRow.setAttribute('id', 'tr-' + i);
+        var tableBody = document.getElementById('table-body');
+        tableBody.appendChild(tableRow);
+        for (var j = 0; j < 4; j++) {
+          var data = document.createElement('td');
+          data.innerHTML = duLieuBang[i][j];
+          tableRow.appendChild(data);
+        }
+      }
+     
+    }
+  </script>
+</body>
+
+</html>
