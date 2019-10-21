@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8fe93bb35124695d690c11baa33dbf871ff431b4
 <h1>Hello PHP 21</h1>
 <?php
 // echo  6 + "5";
