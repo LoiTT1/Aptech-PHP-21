@@ -88,7 +88,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->save();
-        return redirect()->route('users.index');
+        return redirect()->route('users.show', $user->id);
     }
     /**
      * Remove the specified resource from storage.

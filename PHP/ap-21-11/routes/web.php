@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/users', 'UserController@index')->name('users.index');
 Route::get('/users/create', 'UserController@create');
 //xem chi tiet nguoi dung
-Route::get('/users/{id}', 'UserController@Show');
+Route::get('/users/{id}', 'UserController@Show')->name('users.show');
 Route::post('/users', 'UserController@store');
 Route::delete('/users/{id}', 'UserController@destroy');
 Route::get('/users/{id}/edit', 'UserController@edit');
