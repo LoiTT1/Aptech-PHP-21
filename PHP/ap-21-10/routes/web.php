@@ -14,5 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::get('/users', 'UserController@index');
+=======
+>>>>>>> 499c0a483493e27b7850feed4c999938658a9840
