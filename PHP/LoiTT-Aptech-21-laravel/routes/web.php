@@ -15,3 +15,4 @@
 //     return view('welcome');
 // });
 Route::resource('articles', 'ArticleController');
+//https://github.com/LoiTT1/Aptech-PHP-21/tree/master/PHP/LoiTT-Aptech-21-laravel
